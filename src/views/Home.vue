@@ -1,22 +1,12 @@
 <template>
   <div class="home">
     <div class="posts-container">
-      <Post date="06-09-2021" title="Regular Post Title"/>
-      <Post date="06-08-2021" title="Image Post Title" image="arrow.png"/>
-      <Post date="05-30-2021" title="Another Post Title"/>
-      <Post code="
-      pre {
-        display: flex;
-
-        code {
-            width: 100% !important;
-            border: 1px solid #222;
-            color: #a5a714;
-            display: block;
-            }
-      }"
-      date="05-29-2021" title="A Nother Post Title"/>
-      <Post date="05-22-2021" title="This Is A Post Title" image="face.png"/>
+      <Post
+      :actions="false"
+      date="12-06-2021"
+      title="Dawn"
+      text="This is not a blog. This is a 'perpetual work-in-progress'. Welcome aboard."
+      subtext='"Earth to the internet! Do you read me?"'/>
     </div>
   </div>
 </template>

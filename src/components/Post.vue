@@ -9,7 +9,7 @@
       <v-card-title>{{ title }}</v-card-title>
       <v-card-subtitle>{{date}}</v-card-subtitle>
       <!-- eslint-disable-next-line-->
-      <v-card-text>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae illum sit provident nostrum dolore, nulla earum velit odio autem veritatis, nisi unde excepturi! Impedit qui suscipit totam commodi nihil dolorem aliquam distinctio labore, placeat voluptatibus quaerat accusantium? Facere, id nulla aspernatur eum iusto sunt harum dignissimos officiis itaque. Dolore?</v-card-text>
+      <v-card-text>{{text}}</v-card-text>
        <div v-if="code" class="code">
         <v-card-subtitle>CSS</v-card-subtitle>
        <v-card-text>
@@ -20,7 +20,7 @@
         </pre>
       </v-card-text>
        </div>
-      <v-card-actions>
+      <v-card-actions v-if="actions">
         <v-btn class="primary">Primary</v-btn>
         <v-btn class="secondary">Secondary</v-btn>
       </v-card-actions>
@@ -32,9 +32,12 @@
 <script>
 export default {
   props: {
+    actions: Boolean,
     code: String,
     date: String,
     image: String,
+    subtext: String,
+    text: String,
     title: String,
   },
 };
