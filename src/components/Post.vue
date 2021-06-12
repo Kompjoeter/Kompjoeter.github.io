@@ -1,13 +1,13 @@
 <template>
 <div class="card-container">
   <v-card>
-    <div v-if="image" class="image-container">
-    <v-img max-width="300px" :src="require('@/assets/'+image+'')"></v-img>
+    <div class="image-container">
+    <img v-if="avatar" class="avatar" :src="require(`@/assets/${avatar}`)">
     </div>
 
     <div class="text-container">
       <v-card-title>{{ title }}</v-card-title>
-      <v-card-subtitle>{{date}}</v-card-subtitle>
+      <v-card-subtitle>By {{author}} on {{date}}</v-card-subtitle>
       <!-- eslint-disable-next-line-->
       <v-card-text>{{text}}</v-card-text>
        <div v-if="code" class="code">
@@ -20,7 +20,6 @@
         </pre>
       </v-card-text>
        </div>
-      <v-card-subtitle class="signature">{{author}}</v-card-subtitle>
       <v-card-actions v-if="actions">
         <v-btn class="primary">Primary</v-btn>
         <v-btn class="secondary">Secondary</v-btn>
@@ -35,6 +34,7 @@ export default {
   props: {
     actions: Boolean,
     author: String,
+    avatar: String,
     code: String,
     date: String,
     image: String,

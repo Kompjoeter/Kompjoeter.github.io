@@ -4,6 +4,7 @@
       <Post
       :actions="false"
       author="Joran de Boer"
+      avatar="me.png"
       date="June 12, 2021"
       title="Dawn"
       eslint-disable-next-line
