@@ -106,5 +106,10 @@
                 }
             }
         }
+        $breakpoint-tablet: 768px;
+        @media (max-width: $breakpoint-tablet) {
+            width: unset;
+            max-width: 500px;
+        }
     }
 }
