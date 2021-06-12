@@ -1,6 +1,7 @@
 @import '~vuetify/src/styles/settings/_variables';
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
+$bg-main-gradient-light: linear-gradient(to bottom, #d1d2ff, #b1b1ff, #9090ff, #6f6eff, #474aff);
 $bg-main-light: #F3F3FE;
 $bg-card-light: #FDFDFD;
 $bg-code-light: #383838;
@@ -19,6 +20,7 @@ $border-card-dark: #222222;
 
 
 $bg-main: $bg-main-light;
+$bg-main-gradient: $bg-main-gradient-light;
 $bg-card: $bg-card-light;
 $bg-button: $bg-button-light;
 $bg-code: $bg-code-light;
