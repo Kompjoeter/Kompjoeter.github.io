@@ -1,0 +1,30 @@
+@import '~vuetify/src/styles/settings/_variables';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+$bg-main-light: #F3F3FE;
+$bg-card-light: #FDFDFD;
+$bg-code-light: #383838;
+$bg-button-light: #FDFDFD;
+$border-card-light: #EEE;
+$border-button-light: #DDD;
+$shadow-main-light: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+$title-main-light: #333;
+$subtitle-main-light: #444;
+$text-main-light: #333;
+
+$bg-main-dark: #121212;
+$bg-card-dark: #141414;
+$bg-button-dark: #181818;
+$border-card-dark: #222222;
+
+
+$bg-main: $bg-main-light;
+$bg-card: $bg-card-light;
+$bg-button: $bg-button-light;
+$bg-code: $bg-code-light;
+$border-card: $border-card-light;
+$border-button: $border-button-light;
+$shadow-main: $shadow-main-light;
+$title-main: $title-main-light;
+$subtitle-main: $subtitle-main-light;
+$text-main: $text-main-light;
