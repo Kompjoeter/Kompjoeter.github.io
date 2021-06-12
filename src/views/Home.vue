@@ -9,8 +9,25 @@
       title="Dawn"
       eslint-disable-next-line
       text="This is no blog.
-      This is a 'perpetual work-in-progress'. Welcome aboard."
-      subtext='"Earth to the internet! Do you read me?"'/>
+      This is a 'perpetual work-in-progress'. Welcome aboard."/>
+
+      <Post
+      :actions="false"
+      author="Joran de Boer"
+      avatar="me.png"
+      date="June 12, 2021"
+      title="Irrelevance"
+      eslint-disable-next-line
+      text="This is a temporary post. How has your day been?"/>
+
+      <Post
+      :actions="false"
+      author="Joran de Boer"
+      avatar="me.png"
+      date="June 12, 2021"
+      title="Obsolete"
+      eslint-disable-next-line
+      text="This is a temporary post. Have you tried Battlefield 1?"/>
     </div>
   </div>
 </template>
@@ -37,8 +54,7 @@ export default {
 
     .posts-container {
       display: flex;
-      flex-direction: column;
-      box-shadow: $shadow-main-light;
+      flex-direction: column-reverse;
       border-radius: 2px;
     }
   }
