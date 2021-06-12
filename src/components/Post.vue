@@ -20,6 +20,7 @@
         </pre>
       </v-card-text>
        </div>
+      <v-card-subtitle class="signature">{{author}}</v-card-subtitle>
       <v-card-actions v-if="actions">
         <v-btn class="primary">Primary</v-btn>
         <v-btn class="secondary">Secondary</v-btn>
@@ -33,6 +34,7 @@
 export default {
   props: {
     actions: Boolean,
+    author: String,
     code: String,
     date: String,
     image: String,

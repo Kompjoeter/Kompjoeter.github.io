@@ -3,7 +3,8 @@
     <div class="posts-container">
       <Post
       :actions="false"
-      date="12-06-2021"
+      author="Joran de Boer"
+      date="June 12, 2021"
       title="Dawn"
       text="This is not a blog. This is a 'perpetual work-in-progress'. Welcome aboard."
       subtext='"Earth to the internet! Do you read me?"'/>

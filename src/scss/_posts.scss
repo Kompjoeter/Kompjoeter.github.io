@@ -41,8 +41,12 @@
 
                 &__subtitle {
                     color: #727272 !important;
-                    font-size: 14px;
+                    font-size: 12px;
+                    font-style: italic;
                     padding: 0 0 8px 0 !important;
+                    &.signature {
+                        padding: 8px 0 0 0 !important;
+                    }
                 }
 
                 &__text {
