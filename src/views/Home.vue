@@ -6,7 +6,9 @@
       author="Joran de Boer"
       date="June 12, 2021"
       title="Dawn"
-      text="This is not a blog. This is a 'perpetual work-in-progress'. Welcome aboard."
+      eslint-disable-next-line
+      text="This is no blog.
+      This is a 'perpetual work-in-progress'. Welcome aboard."
       subtext='"Earth to the internet! Do you read me?"'/>
     </div>
   </div>
