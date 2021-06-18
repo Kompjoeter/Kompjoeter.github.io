@@ -2,14 +2,15 @@
 <div class="card-container">
   <v-card>
     <div class="image-container">
-    <img v-if="avatar" class="avatar" :src="require(`@/assets/${avatar}`)">
+    <Avatar v-if="avatar" class="avatar"/>
+    <v-img v-if="image" max-width="300" :src="require(`@/assets/${image}`)"></v-img>
     </div>
 
     <div class="text-container">
       <v-card-title>{{ title }}</v-card-title>
       <v-card-subtitle>By {{author}} on {{date}}</v-card-subtitle>
       <!-- eslint-disable-next-line-->
-      <v-card-text>{{text}}</v-card-text>
+      <TextBlock :text="text"/>
        <div v-if="code" class="code">
         <v-card-subtitle>CSS</v-card-subtitle>
        <v-card-text>
@@ -30,6 +31,9 @@
 </template>
 
 <script>
+import Avatar from '@/components/Avatar.vue';
+import TextBlock from '@/components/Post/TextBlock.vue';
+
 export default {
   props: {
     actions: Boolean,
@@ -42,9 +46,13 @@ export default {
     text: String,
     title: String,
   },
+  components: {
+    Avatar,
+    TextBlock,
+  },
 };
 </script>
 
 <style lang="scss">
-@import '../scss/_settings';
+@import '@/scss/_settings';
 </style>

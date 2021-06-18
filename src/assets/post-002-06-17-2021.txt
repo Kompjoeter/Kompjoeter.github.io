@@ -1,0 +1,14 @@
+<u>This</u> is a <span style='background-color: #484848; color: #eee;
+padding: 0px 4px;'> <b>special block of text</b>.</span>
+I can make my text <b>bold</b> or <i>italic</i> and even use inline styling or
+add clickable links, by including HTML tags inside this string. <br><br>Now in
+<a href='https://vuejs.org/'><b>VueJS</b></a> (Which I used to create this)
+you normally use double brackets '<b>{{}}</b>' to dynamically bind your string props to
+your HTML, displaying them as plain text. Or you can decide which HTML tags
+to use inside your component, given that you want it to be harcoded. <br><br>
+In my case I need to bind the content of my post dynamically, since I don't know
+what I'm going to write beforehand and I want to use the
+same component for every blog-post. Now if I want to <b><i><u>emphasize</u></i></b>
+some of the words or sentences of my post by using HTML, binding my props by simply
+using '<b>{{}}</b>' won't do. If I'd do that with this string my HTML tags wouldn't
+work and would have been visible like &#60;b&#62;this&#60;/b&#62;.

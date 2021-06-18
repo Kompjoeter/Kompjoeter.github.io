@@ -1,10 +1,9 @@
 
 @import './_variables';
+@import './avatar';
 @import './posts';
 
 body {
     background-color: $bg-main;
-    background: $bg-main-gradient !important;
-    background-repeat: no-repeat !important;
     height: 100vh;
 }

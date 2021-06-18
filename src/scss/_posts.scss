@@ -1,12 +1,11 @@
 .card-container {
-    box-shadow: $shadow-main-light;
     margin: 8px 0;
     
     .v-card {
         background-color: $bg-card !important;
         border: 1px $border-card solid !important;
         border-radius: 0 !important;
-        box-shadow: none !important;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
         display: flex !important;
         flex-direction: row !important;
         font-family: "Poppins", sans-serif;
@@ -24,12 +23,6 @@
             .v-image {
                 border-radius: 2px !important;
             }
-
-            .avatar {
-                width: 64px !important;
-                background-color: #333;
-                border-radius: 50%;
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;            }
         }
 
         .text-container {

@@ -9,37 +9,33 @@
       title="Dawn"
       eslint-disable-next-line
       text="This is no blog.
-      This is a 'perpetual work-in-progress'. Welcome aboard."/>
+      This is a <i>'perpetual work-in-progress'.</i> Welcome aboard."/>
 
-      <Post
+    <Post
       :actions="false"
       author="Joran de Boer"
       avatar="me.png"
-      date="June 12, 2021"
-      title="Irrelevance"
-      eslint-disable-next-line
-      text="This is a temporary post. How has your day been?"/>
-
-      <Post
-      :actions="false"
-      author="Joran de Boer"
-      avatar="me.png"
-      date="June 12, 2021"
-      title="Obsolete"
-      eslint-disable-next-line
-      text="This is a temporary post. Have you tried Battlefield 1?"/>
-    </div>
+      date="June 17, 2021"
+      title="TIL: Raw-HTML"
+      :text="post"
+    />
+      </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Post from '@/components/Post.vue';
+import Post from '@/components/Post/Post.vue';
 
 export default {
   name: 'Home',
   components: {
     Post,
+  },
+  created() {
+    fetch('https://raw.githubusercontent.com/Kompjoeter/Github-Hosted-Blog/master/posts.json')
+      .then((response) => response.json())
+      .then((data) => console.log(data));
   },
 };
 </script>
