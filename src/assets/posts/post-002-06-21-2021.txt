@@ -13,4 +13,5 @@ some of the words or sentences of my post by using HTML, binding my props by sim
 using '<b>{{}}</b>' won't do. If I'd do that with this string my HTML tags wouldn't
 work and would have been visible like &#60;b&#62;this&#60;/b&#62;.<br><br>
 To make the HTML tags inside my string actually do their HTML-thing, I can use 
-'v-html' onto a 'span', and then bind my string to this span using <b>{{}}</b>.
+<a href="https://vuejs.org/v2/guide/syntax.html#Raw-HTML"><b>&#60;b&#62;v-html&#60;/b&#62;</b></a> 
+onto a <b>&#60;b&#62;span&#60;/b&#62;</b> and then bind my string to this span using <b>{{}}</b>.
