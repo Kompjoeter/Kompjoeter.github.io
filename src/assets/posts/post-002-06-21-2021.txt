@@ -12,8 +12,8 @@ same component for every blog-post. Now if I want to <b><i><u>emphasize</u></i><
 some of the words or sentences of my post by using HTML, binding my props by simply
 using <b>{{}}</b> won't do. If I'd do that with this string my HTML tags wouldn't
 work and would have been visible like &#60;b&#62;this&#60;/b&#62;.<br><br>
-To make the HTML tags inside my string actually do their HTML-thing, I can use 
-<a href="https://vuejs.org/v2/guide/syntax.html#Raw-HTML"><b>&#60;v-html&#62;</b></a> 
+To make the HTML tags inside my string actually do their HTML-thing, I can use a 
+<a href="https://vuejs.org/v2/guide/syntax.html#Raw-HTML"><b>v-html property</b></a> 
 onto a <b>&#60;span&#62;</b> and then bind my string to this span using <b>{{}}</b>.<br><br>
 This way I can easily make new posts (including inline-styling, links or even images), by simply 
 grabbing a <a href="https://raw.githubusercontent.com/Kompjoeter/kompjoeter.github.io/development/src/assets/posts/post-002-06-21-2021.txt"><b>string</b></a> and binding it to my <b>'Post.vue component'</b>. 
