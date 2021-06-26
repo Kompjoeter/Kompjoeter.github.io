@@ -1,5 +1,5 @@
 <u>This</u> is a <span style='background-color: #484848; color: #eee;
-padding: 0px 4px;'> <b>special block of text</b>.</span>
+padding: 0px 4px;'> special block of text.</span>
 I can make my text <b>bold</b> or <i>italic</i> and even use inline styling or
 add clickable links, by including HTML tags inside this string. <br><br>Now in
 <a href='https://vuejs.org/'>VueJS</a> (Which I used to create this)
