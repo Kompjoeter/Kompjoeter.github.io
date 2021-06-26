@@ -26,13 +26,13 @@
                     color: $text-main;
                     padding: 0 !important;
                     a {
-                        font-weight: bold;
+                        font-weight: bold !important;
                         color: #FF0D81;
                         
                         &:hover {
                             color: #449D9E;
                         }
-                        
+
                         &:visited {
                             color: #449D9E;
                         }
