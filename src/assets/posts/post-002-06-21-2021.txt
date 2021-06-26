@@ -2,7 +2,7 @@
 padding: 0px 4px;'> <b>special block of text</b>.</span>
 I can make my text <b>bold</b> or <i>italic</i> and even use inline styling or
 add clickable links, by including HTML tags inside this string. <br><br>Now in
-<a href='https://vuejs.org/'><b>VueJS</b></a> (Which I used to create this)
+<a href='https://vuejs.org/'>VueJS</a> (Which I used to create this)
 you normally use double brackets <b>{{}}</b> to dynamically bind your string props to
 your HTML, displaying them as plain text. Or you can put your text staight into a component and 
 decide which HTML tags to use inside of it, given that you want it to be harcoded. <br><br>
@@ -13,8 +13,8 @@ some of the words or sentences of my post by using HTML, binding my props by sim
 using <b>{{}}</b> won't do. If I'd do that with this string my HTML tags wouldn't
 work and would have been visible like &#60;b&#62;this&#60;/b&#62;.<br><br>
 To make the HTML tags inside my string actually do their HTML-thing, I can use a 
-<a href="https://vuejs.org/v2/guide/syntax.html#Raw-HTML"><b>v-html property</b></a> 
+<a href="https://vuejs.org/v2/guide/syntax.html#Raw-HTML">v-html property</a> 
 onto a <b>&#60;span&#62;</b> and then simply bind my string prop to this property.<br><br>
 This way I can easily make new posts (including inline-styling, links or even images), by simply 
-grabbing a <a href="https://raw.githubusercontent.com/Kompjoeter/kompjoeter.github.io/development/src/assets/posts/post-002-06-21-2021.txt"><b>string</b></a> and binding it to my <b>'Post.vue component'</b>. 
+grabbing a <a href="https://raw.githubusercontent.com/Kompjoeter/kompjoeter.github.io/development/src/assets/posts/post-002-06-21-2021.txt">string</a> and binding it to my <b>'Post.vue component'</b>. 
 
