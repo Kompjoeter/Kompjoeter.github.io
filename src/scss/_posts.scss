@@ -50,6 +50,15 @@
                 &__text {
                     color: $text-main;
                     padding: 0 !important;
+                    a {
+                        color: #EF4BDE;
+                        &:hover {
+                            color: #449D9E;
+                        }
+                        &:visited {
+                            color: #449D9E;
+                        }
+                    }
                 }
 
                 &__actions {
