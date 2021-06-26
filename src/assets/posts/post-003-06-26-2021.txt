@@ -1,5 +1,1 @@
-Today I implemented dynamic post binding. I bascially used the same method 
-I applied to an earlier <a href="https://kompjoeter.github.io/Github-Hosted-Blog/"><b>blog project</b></a> of mine, although a bit simpler. 
-Basically I grab a json file from my github which contains an array of my blogposts. Each index holds an object containing my post data (title, date, author)
-and a link to where I stored a .txt file containing the actual content of the post. After fetching I bind this data to my posts.
-<br><br>I also reworked the placement of my avatar and titles and I've refactored the avatar binding.
+Today I implemented dynamic post binding. I bascially used the same method I applied to an earlier <a href="https://kompjoeter.github.io/Github-Hosted-Blog/"><b>blog project</b></a> of mine, although a bit simpler (however, I had to refactor it a little to make it work with Vue).<br><br>Basically I grab a json file from my github which contains an array of my blogposts. Each index holds an object containing my post data (title, date, author) and a link to where I stored a .txt file containing the actual content of the post. After fetching I bind this data to my posts.<br><br>I also reworked the placement of my avatar and titles and I've refactored the avatar binding.
