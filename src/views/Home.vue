@@ -4,7 +4,7 @@
       <span v-for="(item, index) in posts" :key="index">
         <Post
         author="Joran de Boer"
-        :avatar="true"
+        avatar="avatar"
         :date="item.date"
         :text="item.text"
         :title="item.title"
