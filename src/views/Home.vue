@@ -1,25 +1,16 @@
 <template>
   <div class="home">
     <div class="posts-container">
-      <Post
-      :actions="false"
-      author="Joran de Boer"
-      avatar="me.png"
-      date="June 12, 2021"
-      title="Dawn"
-      eslint-disable-next-line
-      text="This is no blog.
-      This is a <i>'perpetual work-in-progress'.</i> Welcome aboard."/>
-
-    <Post
-      :actions="false"
-      author="Joran de Boer"
-      avatar="me.png"
-      date="June 17, 2021"
-      title="TIL: Raw-HTML"
-      :text="post"
-    />
-      </div>
+      <span v-for="(item, index) in posts" :key="index">
+        <Post
+        author="Joran de Boer"
+        :avatar="true"
+        :date="item.date"
+        :text="item.text"
+        :title="item.title"
+        />
+      </span>
+    </div>
   </div>
 </template>
 
@@ -29,13 +20,35 @@ import Post from '@/components/Post/Post.vue';
 
 export default {
   name: 'Home',
+  data() {
+    return {
+      posts: [],
+    };
+  },
   components: {
     Post,
   },
   created() {
-    fetch('https://raw.githubusercontent.com/Kompjoeter/Github-Hosted-Blog/master/posts.json')
-      .then((response) => response.json())
-      .then((data) => console.log(data));
+    this.getPosts();
+  },
+  methods: {
+    getPosts() {
+      fetch('https://raw.githubusercontent.com/Kompjoeter/kompjoeter.github.io/main/posts/posts.json')
+        .then((response) => response.json())
+        .then((data) => {
+          this.posts = data;
+          this.getPostContent();
+        });
+    },
+    getPostContent() {
+      this.posts.forEach((post, index) => {
+        fetch(post.file)
+          .then((response) => response.text())
+          .then((content) => {
+            this.posts[index].text = content;
+          });
+      });
+    },
   },
 };
 </script>
