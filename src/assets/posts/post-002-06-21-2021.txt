@@ -15,5 +15,6 @@ work and would have been visible like &#60;b&#62;this&#60;/b&#62;.<br><br>
 To make the HTML tags inside my string actually do their HTML-thing, I can use 
 <a href="https://vuejs.org/v2/guide/syntax.html#Raw-HTML"><b>'&#60;v-html&#62;'</b></a> 
 onto a <b>'&#60;span&#62;'</b> and then bind my string to this span using <b>'{{}}'</b>.<br><br>
-The string containing the content of this post looks like 
-<a href="https://raw.githubusercontent.com/Kompjoeter/kompjoeter.github.io/development/src/assets/posts/post-002-06-21-2021.txt"><b>this</b></a>
+This way I can easily make new posts (including inline-styling, links or even images), by simply 
+grabbing a <a href="https://raw.githubusercontent.com/Kompjoeter/kompjoeter.github.io/development/src/assets/posts/post-002-06-21-2021.txt"><b>string</b></a> and binding it to my <b>'Post.vue component'</b>. 
+
