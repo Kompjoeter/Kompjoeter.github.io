@@ -1,0 +1,3 @@
+Do you like my background? It is generated noise! I found this little program that outputs a small image which you can bind to your CSS </b>background-img<b> (On background-repeat: repeat).
+
+<a href="http://www.noisetexturegenerator.com/">Try it out yourself!</a>
