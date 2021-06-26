@@ -14,4 +14,6 @@ using '<b>{{}}</b>' won't do. If I'd do that with this string my HTML tags would
 work and would have been visible like &#60;b&#62;this&#60;/b&#62;.<br><br>
 To make the HTML tags inside my string actually do their HTML-thing, I can use 
 <a href="https://vuejs.org/v2/guide/syntax.html#Raw-HTML"><b>'&#60;v-html&#62;'</b></a> 
-onto a <b>'&#60;span&#62;'</b> and then bind my string to this span using <b>'{{}}'</b>.
+onto a <b>'&#60;span&#62;'</b> and then bind my string to this span using <b>'{{}}'</b>.<br><br>
+The string containing the content of this post looks like 
+<a href="https://raw.githubusercontent.com/Kompjoeter/kompjoeter.github.io/development/src/assets/posts/post-002-06-21-2021.txt"><b>this</b></a>
