@@ -7,23 +7,12 @@
         border-radius: 0 !important;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
         display: flex !important;
-        flex-direction: row !important;
+        flex-direction: column !important;
         font-family: "Poppins", sans-serif;
-        padding: 16px 32px 24px 16px;
+        padding: 24px 32px 24px 24px;
+        position: relative;
         text-align: left;
         width: 720px;
-
-        .image-container {
-            border: 0px $border-card solid !important;
-            border-radius: 2px !important;
-            box-shadow: none !important;
-            margin: 0 24px 0 0 !important;
-            height: fit-content;
-
-            .v-image {
-                border-radius: 2px !important;
-            }
-        }
 
         .text-container {
             color: #727272;
@@ -33,20 +22,6 @@
             width: 100%;
             
             .v-card {
-                &__title {
-                    color: $title-main !important;
-                    font-weight: 500;
-                    padding: 0 0 10px 0 !important;
-                    text-transform: uppercase;
-                }
-
-                &__subtitle {
-                    color: #727272 !important;
-                    font-size: 12px;
-                    font-style: italic;
-                    padding: 0 !important;
-                }
-
                 &__text {
                     color: $text-main;
                     padding: 0 !important;
@@ -57,61 +32,6 @@
                         }
                         &:visited {
                             color: #449D9E;
-                        }
-                    }
-                }
-
-                &__actions {
-                    height: 100%;
-                    display: flex !important;
-                    align-items: flex-end;
-                    justify-content: flex-end;
-                    margin: 18px 0 0 0 !important;
-                    padding: 0 !important;
-                    
-                    .v-btn {
-                        border: 1px $border-button solid;
-                        border-radius: 2px !important;
-                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
-                        font-weight: 300;
-
-                        &:first-child {
-                            margin-right: 16px;
-                        }
-
-                        &.primary {
-                            background-color: #4060ff !important;
-                            color: #EEE;
-                        }
-
-                        &.secondary {
-                            background-color: $bg-button !important;
-                            color: #333;
-                        }
-                    }
-                }
-            }
-
-            .code {
-                padding: 0 !important;
-                margin: 16px 0 8px 0;
-
-                .v-card__subtitle {
-                    padding: 0 0 8px 0 !important;
-                }
-                .v-card__text {
-                background-color: $bg-code;
-                border: $border-button 1px solid;
-                border-radius: 2px;
-
-                pre { 
-                    display: flex;
-
-                    code {
-                        width: 100% !important;
-                        border: 1px solid #222;
-                        color: #babd1a;
-                        display: block;
                         }
                     }
                 }

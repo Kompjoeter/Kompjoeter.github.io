@@ -1,0 +1,22 @@
+.post-header {
+    display: flex;
+    flex-direction: row;
+    
+    .titles-container {
+        padding: 0 0 32px 16px;
+
+        .v-card__title {
+            color: $title-main !important;
+            font-weight: 500;
+            padding: 0 0 8px 0 !important;
+            text-transform: uppercase;
+        }
+
+        .v-card__subtitle {
+            color: #449D9E !important;
+            font-size: 12px;
+            font-style: italic;
+            padding: 0 !important;
+        }
+    }
+}
