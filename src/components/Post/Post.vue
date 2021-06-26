@@ -2,7 +2,7 @@
 <div class="card-container">
   <v-card>
     <div class="image-container">
-    <Avatar v-if="avatar" class="avatar"/>
+    <Avatar :author="author" class="avatar"/>
     <v-img v-if="image" max-width="300" :src="require(`@/assets/${image}`)"></v-img>
     </div>
 
