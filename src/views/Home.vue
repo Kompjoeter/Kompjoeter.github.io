@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     getPosts() {
-      fetch('https://raw.githubusercontent.com/Kompjoeter/kompjoeter.github.io/main/posts/posts.json')
+      fetch('https://raw.githubusercontent.com/Kompjoeter/kompjoeter.github.io/development/src/assets/posts/posts.json')
         .then((response) => response.json())
         .then((data) => {
           this.posts = data;
