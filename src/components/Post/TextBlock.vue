@@ -1,5 +1,5 @@
 <template>
-  <v-card-text id="text-container">
+  <v-card-text>
       <span v-html="text">
       </span>
   </v-card-text>
