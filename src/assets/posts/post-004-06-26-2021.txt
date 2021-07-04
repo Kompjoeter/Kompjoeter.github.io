@@ -1,2 +1,2 @@
 Do you like my background? It is generated noise (Not perlin noise)!<br><br>
-I found this little program that outputs a small image (or size of your choosing) which you can bind to your CSS <b>background-image</b> (Make sure you add 'background-repeat: repeat'). It's very basic but it does the trick! <br><br><a href="http://www.noisetexturegenerator.com/">Try it out yourself!</a>
+I found this program that outputs a small image (or size of your choosing) which you can bind to your CSS <b>background-image</b> (Make sure you add 'background-repeat: repeat'). It's very basic but it does the trick. <br><br><a href="http://www.noisetexturegenerator.com/">Try it out yourself!</a>
