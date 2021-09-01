@@ -1,49 +1,56 @@
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 512px;
+
 .card-container {
-    margin: 16px 0;
+  margin: 16px 0;
     
-    .v-card {
-        background-color: $bg-card !important;
-        border: 1px $border-card solid !important;
-        border-radius: 0 !important;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        font-family: "Poppins", sans-serif;
-        padding: 24px 32px 24px 24px;
-        position: relative;
-        text-align: left;
-        width: 720px;
+  .v-card {
+    background-color: $bg-card !important;
+    border: 1px $border-card solid !important;
+    border-radius: 0 !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    font-family: "Poppins", sans-serif;
+    padding: 24px 32px 24px 24px;
+    position: relative;
+    text-align: left;
+    width: 720px;
 
-        .text-container {
-            color: #727272;
-            display: flex;
-            flex-direction: column;
-            padding: 0;
-            width: 100%;
-            
-            .v-card {
-                &__text {
-                    color: $text-main;
-                    padding: 0 !important;
-                    a {
-                        font-weight: bold !important;
-                        color: #FF0D81;
-                        
-                        &:hover {
-                            color: #449D9E;
-                        }
-
-                        &:visited {
-                            color: #449D9E;
-                        }
-                    }
-                }
+    .text-container {
+      color: #727272;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      width: 100%;
+          
+      .v-card {
+        &__text {
+          color: $text-main;
+          padding: 0 !important;
+          a {
+            font-weight: bold !important;
+            color: #FF0D81;
+                      
+            &:hover {
+              color: #449D9E;
             }
+
+            &:visited {
+              color: #449D9E;
+            }
+          }
         }
-        $breakpoint-tablet: 768px;
-        @media (max-width: $breakpoint-tablet) {
-            width: unset;
-            max-width: 500px;
-        }
+      }
     }
+  }
+  @media only screen and (max-width: $breakpoint-tablet) {
+    width: 100vw !important;
+    padding: 16px 32px;
+  }
+
+  @media only screen and (max-width: $breakpoint-mobile) {
+    width: 100vw !important;
+    padding: 16px 0;
+  }
 }
