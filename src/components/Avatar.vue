@@ -1,7 +1,7 @@
 <template>
       <v-avatar
       color="orange"
-      size="62"
+      size="42"
     >
       <v-img v-if="img" :src="img"></v-img>
       <span v-if="!img" class="white--text text-h5">{{initials}}</span>

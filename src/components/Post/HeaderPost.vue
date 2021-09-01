@@ -1,12 +1,14 @@
 <template>
   <div class="post-header">
-    <div class="avatar-container">
-        <Avatar :author="author" :img="avatar" class="avatar"/>
-      </div>
-      <div class="titles-container">
-        <v-card-title>{{ title }}</v-card-title>
-        <v-card-subtitle>By {{author}} on {{date}}</v-card-subtitle>
-      </div>
+    <div class="header-container">
+      <div class="avatar-container">
+          <Avatar :author="author" :img="avatar" class="avatar"/>
+        </div>
+        <div class="titles-container">
+          <v-card-title>{{ title }}</v-card-title>
+          <v-card-subtitle>By {{author}} on {{date}}</v-card-subtitle>
+        </div>
+    </div>
   </div>
 </template>
 

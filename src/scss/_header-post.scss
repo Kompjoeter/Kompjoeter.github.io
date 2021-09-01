@@ -1,22 +1,26 @@
 .post-header {
-    display: flex;
-    flex-direction: row;
-    
-    .titles-container {
-        padding: 0 0 32px 16px;
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px #DDD solid;
+        margin-bottom: 8px;
 
-        .v-card__title {
-            color: $title-main !important;
-            font-weight: 500;
-            padding: 0 0 8px 0 !important;
-            text-transform: uppercase;
-        }
+        .titles-container {
+            padding: 0 0 8px 16px;
 
-        .v-card__subtitle {
-            color: #449D9E !important;
-            font-size: 12px;
-            font-style: italic;
-            padding: 0 !important;
+            .v-card__title {
+                color: $title-main !important;
+                font-weight: 500;
+                padding: 0 0 8px 0 !important;
+                text-transform: uppercase;
+            }
+
+            .v-card__subtitle {
+                color: #449D9E !important;
+                font-size: 12px;
+                font-style: italic;
+                padding: 0 !important;
+            }
         }
     }
 }
