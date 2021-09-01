@@ -61,6 +61,10 @@ export default {
     justify-content: center;
     padding: 32px;
 
+    @media only screen and (max-width: $breakpoint-mobile) {
+      padding: 0;
+    }
+
     .posts-container {
       display: flex;
       flex-direction: column-reverse;
